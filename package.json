@@ -1,0 +1,47 @@
+{
+  "name": "poi-plugin-let-me-in",
+  "version": "1.0.0",
+  "description": "Gadget server block bypass",
+  "keywords": [
+    "kancolle",
+    "poi",
+    "poi-plugin"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "gakada",
+    "url": "https://github.com/gakada"
+  },
+  "homepage": "https://github.com/kcwiki/poi-plugin-let-me-in#readme",
+  "bugs": "https://github.com/kcwiki/poi-plugin-let-me-in/issues",
+  "repository": "kcwiki/poi-plugin-let-me-in",
+  "main": "index.js",
+  "files": [
+    "i18n",
+    "index.js"
+  ],
+  "scripts": {
+    "format": "prettier --loglevel warn --write '**/*.{js,json,md,ts,yaml,yml}'",
+    "lint": "eslint . --fix",
+    "test": "yarn format && yarn lint",
+    "prepack": "yarn test",
+    "up": "yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "bluebird": "^3.7.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "fs-extra": "^9.0.1",
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0",
+    "prettier": "^2.0.5"
+  },
+  "poiPlugin": {
+    "title": "Plugin.Title",
+    "description": "Plugin.Description",
+    "icon": "fa/wheelchair-alt",
+    "priority": 100
+  }
+}

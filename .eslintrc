@@ -1,0 +1,14 @@
+{
+  "env": { "browser": true, "es6": true, "node": true },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "parser": "babel-eslint",
+  "rules": {
+    "complexity": ["error", 5],
+    "max-depth": ["error", 5],
+    "max-lines-per-function": ["error", 50],
+    "max-nested-callbacks": ["error", 5],
+    "max-params": ["error", 5],
+    "max-statements": ["error", 10],
+    "no-console": 0
+  }
+}

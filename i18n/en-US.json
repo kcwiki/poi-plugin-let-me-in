@@ -1,0 +1,6 @@
+{
+  "Plugin": {
+    "Title": "Gadget server block bypass",
+    "Description": "Maintain a local copy of the gadget server [cache](https://github.com/kcwiki/cache) to make logging-in possible"
+  }
+}
