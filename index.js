@@ -17,7 +17,7 @@ const getCache = path =>
 const update = async (lastModified = {}, newLastModified = {}) => {
   const urls = keys(newLastModified).filter(url => !lastModified[url] || new Date(lastModified[url]) < new Date(newLastModified[url]))
   await map(urls, async url => {
-    const path = url.replace('http://203.104.209.7/', '')
+    const path = url.replace('http://w00g.kancolle-server.com/', '')
     const proxyUrl = `https://kcwiki.github.io/cache/${path}`
     const res = await fetch(proxyUrl)
     if (res.status === 200) {
